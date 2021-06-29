@@ -4,8 +4,8 @@
     <string name="problema_1">Problema 1</string>
     <string name="problema_3">Problema 3</string>
     <string name="t_tempvalue">Temperatura..</string>
-    <string-array name="temperature_units">
-        <item>°C</item>
-        <item>°F</item>
+    <string-array name="units_array">
+        <item>C</item>
+        <item>F</item>
     </string-array>
 </resources>

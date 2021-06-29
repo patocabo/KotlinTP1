@@ -4,33 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:visibility="visible"
     tools:context=".view.TemperatureActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="Conversor de temperatura"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:gravity="center_horizontal"/>
+        android:textStyle="bold" />
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="24dp"/>
+        android:layout_height="24dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/e_tempvalue"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:inputType="numberDecimal|numberSigned"
-            android:minWidth="64sp"
-            android:gravity="center_horizontal"/>
+            android:minWidth="64sp" />
 
         <Spinner
             android:id="@+id/s_unit"
@@ -49,5 +50,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Convertir" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12sp" />
+
+    <TextView
+        android:id="@+id/t_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
 
 </LinearLayout>
